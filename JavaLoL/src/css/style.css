@@ -49,9 +49,14 @@ body {
    color: rgb(19, 19, 19);
 }
 
+
+/*
+* For mobile devices
+*/
+
 #champions {
    display: grid;
-   grid-template-columns: repeat(5, 10fr);
+   grid-template-columns: repeat(1, 10fr);
    grid-gap: 10px;
    width: 100%;
    justify-items: center;
@@ -176,6 +181,10 @@ td th {
    border: 1px solid white;
 }
 
+/**
+* Animations for card
+*/
+
 @keyframes cardInfo {
    from {
       height: 0%;
@@ -248,5 +257,34 @@ td th {
 .description {
    font-size: 0.8rem;
    margin: 1rem;
+}
+
+/*
+* Media queries for middle size width
+*/
+
+@media screen and (min-width:700px) and (max-width: 1200px){
+   #champions {
+      display: grid;
+      grid-template-columns: repeat(2, 10fr);
+      grid-gap: 10px;
+      width: 100%;
+      justify-items: center;
+   }
+}
+
+
+/*
+* Media queries for fullscreen
+*/
+
+@media screen and (min-width:1200px){
+   #champions {
+      display: grid;
+      grid-template-columns: repeat(5, 10fr);
+      grid-gap: 10px;
+      width: 100%;
+      justify-items: center;
+   }
 }
 

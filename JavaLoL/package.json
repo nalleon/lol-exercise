@@ -6,7 +6,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel serve -d dist src/index.html",
     "build": "parcel build src/index.html --public-url /lol-exercise/",
-    "predeploy": "npm run build",
+        "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
   "repository": {
@@ -20,11 +20,11 @@
   },
   "homepage": "https://github.com/nalleon/lol-exercise#readme",
   "dependencies": {
-    "gh-pages": "^6.1.1",
     "parcel": "^2.12.0",
     "svgo": "^3.0.2"
   },
   "devDependencies": {
+    "gh-pages": "^6.1.1",
     "srcset": "^5.0.1"
   }
 }
